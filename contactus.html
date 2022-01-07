@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<style>
+    .heading {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        /* border: 2px solid red; */
+        width: 50%;
+        margin: auto;
+        margin-top: 90px;
+    }
+    
+    .heading p {
+        color: rgb(85, 85, 85);
+    }
+    
+    .smid {
+        display: none;
+    }
+    
+    .heading h1 {
+        font-size: 50px;
+    }
+    
+    .heading p a {
+        color: rgb(77, 77, 77);
+    }
+    
+    .heading p a:hover {
+        color: rgb(55, 0, 255);
+    }
+    
+    .insta {
+        width: 30px;
+        text-decoration: none;
+        color: blue;
+    }
+    
+    .twitter {
+        width: 30px;
+        text-decoration: none;
+        color: blue;
+    }
+    
+    .linkedin {
+        width: 30px;
+        text-decoration: none;
+        color: blue;
+    }
+    
+    .socialmedias a {
+        padding-right: 15px;
+    }
+    
+    .left {
+        /* border: 2px solid green; */
+        /* padding: 5px; */
+        text-align: center;
+        display: inline-block;
+        width: 15%;
+        position: relative;
+        left: 10px;
+        font-family: 'Cinzel', serif;
+        font-weight: bold;
+        font-size: 20px;
+        color: rgb(77, 77, 77);
+    }
+    
+    .mid {
+        /* border: 2px solid red; */
+        padding: 0px;
+        display: inline-block;
+        width: 30%;
+        position: relative;
+        left: 20%;
+        font-family: 'Cinzel', serif;
+        font-kerning: 500;
+    }
+    
+    .right {
+        /* border: 2px solid black; */
+        padding: 5px;
+        display: inline-block;
+        width: 15%;
+        position: relative;
+        left: 550px;
+        text-align: center;
+        font-family: 'Cinzel', serif;
+        font-weight: bold;
+    }
+    
+    .container {
+        color: black;
+        margin-top: 43px;
+    }
+    
+    .mid ul li {
+        display: flex;
+        padding-left: 29px;
+    }
+    
+    .mid ul li :hover {
+        text-decoration: underline;
+        color: blue;
+    }
+    
+    .mid ul {
+        display: flex;
+        font-size: 20px;
+        padding-left: 60px;
+    }
+    
+    .link {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .btn {
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+        border-radius: 3px;
+        padding: 3px 5px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    
+    .btn2 {
+        display: none;
+    }
+    
+    .top {
+        background-color: rgba(232, 240, 254, 0.502);
+        border: 1px solid white;
+        color: blue;
+        text-align: center;
+        margin-top: 0px;
+    }
+    
+    @media (max-width: 376px) {
+        .right {
+            display: none;
+        }
+        .mid {
+            display: none;
+        }
+        .left {
+            font-size: 20px;
+        }
+        .heading h1 {
+            font-size: 30px;
+        }
+        .heading p {
+            /* border: 1px solid red; */
+            width: 130%;
+            position: relative;
+            right: 1.5rem;
+            font-size: 15px;
+            text-align: center;
+        }
+        .heading {
+            text-align: center;
+        }
+        .socialmedias a {
+            display: block;
+        }
+        .mid .plink {
+            display: flex;
+            margin: auto;
+            width: 100%;
+        }
+        .plink {
+            text-decoration: none;
+            display: flex;
+        }
+        .smid {
+            display: block;
+            margin: 0 8%;
+        }
+        .smid ul {
+            display: flex;
+            text-decoration: none;
+            list-style: none;
+        }
+        .smid li {
+            padding: 0 10px;
+            font-size: 20px;
+            font-family: 'Cinzel', serif;
+        }
+        .smid a {
+            color: black;
+        }
+        .btn2 {
+            display: initial;
+            float: right;
+            position: relative;
+            top: 20px;
+            background-color: black;
+            border: 1px solid black;
+            color: white;
+            border-radius: 5px;
+            padding: 3px 6px;
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
+        }
+    }
+</style>
+
+<body>
+    <div class="top">
+        <p>Welcome!</p>
+    </div>
+    <header class="container">
+        <div class="left">
+            <p class="archan">Archan</p>
+        </div>
+        <a href="contactus.html">
+            <button class="btn2">Reach Me 👩🏻‍💻</button>
+        </a>
+
+
+        <div class="mid">
+            <ul>
+                <li><a class="link" href="index.html">Home</a></li>
+                <li><a class="link" href="blog.html">Blogs</a></li>
+                <li><a class="link" href="aboutus.html">About us</a></li>
+            </ul>
+        </div>
+        <div class="smid">
+            <ul>
+                <li><a class="plink" href="index.html">Home</a></li>
+                <li><a class="plink" href="blog.html">Blogs</a></li>
+                <li><a class="plink" href="aboutus.html">About</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <a href="contactus.html">
+                <h3><button class="btn">Reach Me 👩🏻‍💻</button></h3>
+            </a>
+        </div>
+    </header>
+    <div class="heading">
+        <h1>Reach Me 👩🏻‍💻</h1>
+
+        <div class="socialmedias">
+            <p> My social medias : </p>
+            <a href="https://www.instagram.com/archan_92/"> <img class="insta" src="instagram.jpg">Instagram</a>
+            <a href="https://www.twitter.com/archan_rd"><img class="twitter" src="twitter.png">Twitter</a>
+            <a href="https://www.linkedin.com/in/archan-rd-ba67a0227/"><img class="linkedin" src="linkedin.png">linkedIn</a>
+
+            <div class="email">
+                <p>You can also contact me on my email: <a type="email" href="#">mrtom996@gmail.com</a></p>
+            </div>
+            <hr>
+
+            <p>If you want to send me any kind of suggestions, you can send me via the above sources. 😊</p>
+        </div>
+    </div>
+</body>
+
+</html>
