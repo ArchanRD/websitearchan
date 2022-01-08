@@ -8,6 +8,14 @@ body {
     text-decoration: underline;
 }
 
+.profile {
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 66px;
+}
+
 .top {
     background-color: rgba(232, 240, 254, 0.502);
     border: 1px solid white;
@@ -143,6 +151,10 @@ body {
     .right {
         display: none;
     }
+    .profile {
+        width: 100px;
+        margin-top: 32px;
+    }
     .mid {
         display: none;
     }
@@ -176,7 +188,7 @@ body {
     }
     .smid {
         display: block;
-        margin: 0 8%;
+        margin: 0 0 0 45px;
     }
     .smid ul {
         display: flex;
