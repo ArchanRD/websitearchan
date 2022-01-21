@@ -94,12 +94,11 @@ body {
 
 .link {
     text-decoration: none;
-    color: white;
+    color: rgb(255, 136, 0);
 }
 
 .link:hover {
     text-decoration: underline;
-    color: rgb(255, 136, 0);
 }
 
 .img {
@@ -183,10 +182,6 @@ hr {
     hr {
         /* display: none; */
         width: 250px;
-    }
-    .head {
-        margin: auto;
-        width: fit-content;
     }
     .apple {
         /* display: none; */
