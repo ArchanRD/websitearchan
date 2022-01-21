@@ -24,35 +24,49 @@
     </div>
     <header class="container">
         <div class="left">
-            <p class="archan">Archan</p>
-        </div>
-
-        <a href="contactus.html">
-            <button class="btn2">Reach Me 👩🏻‍💻</button>
-        </a>
-        <!-- <img class="tlines" src="three-lines.png"> -->
-
-        <div class="mid">
-
-            <ul>
-                <li><a class="link, underline" href="index.html">Home</a></li>
-                <li><a class="link" href="blog.html">Blogs</a></li>
-                <li><a class="link" href="aboutus.html">About</a></li>
-            </ul>
-        </div>
-        <div class="smid">
-            <ul>
-                <li><u><a class="plink" href="index.html">Home</a></u></li>
-                <li><a class="plink" href="blog.html">Blogs</a></li>
-                <li><a class="plink" href="aboutus.html">About</a></li>
-            </ul>
-        </div>
-
-        <div class="right">
-            <a href="contactus.html">
-                <button class="btn">Reach Me 👩🏻‍💻</button>
+            <a href="index.html">
+                <p class="archan">Archan</p>
             </a>
         </div>
+
+        <div class="nav-mid">
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="blog.html">
+                    <li>Blog</li>
+                </a>
+                <a href="aboutus.html">
+                    <li>About</li>
+                </a>
+
+            </ul>
+        </div>
+        <div id="reach-me">
+            <a href="contactus.html"><button> Reach Me</button></a>
+        </div>
+        <div class="smid">
+            <img class="menu-icon" src="menu.png" onclick="togglemenu()">
+            <ul id="menuList">
+                <a class="plink dumy" href="index.html">
+                    <li></li>
+                </a>
+                <a class="plink" href="index.html">
+                    <li>Home</li>
+                </a>
+                <a class="plink" href="blog.html">
+                    <li>Blogs</li>
+                </a>
+                <a class="plink" href="aboutus.html">
+                    <li>About</li>
+                </a>
+                <a class="plink" href="contactus.html">
+                    <li>Reach</li>
+                </a>
+            </ul>
+        </div>
+
 
     </header>
 
@@ -65,10 +79,22 @@
         <p class="para">You can suggest me some awesome Website Design on my <b><a href="https://www.instagram.com/archan_92/">Instagram.</a></b><br>It would help me a lot to improve my Website</p>
         <hr>
 
-        <p>Send your reviews here</p>
-        <a href="mailto: mrtom996@gmail.com">Email me</a>
     </div>
 
+
+    <script>
+        var menuList = document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu() {
+            if (menuList.style.maxHeight == "0px") {
+                menuList.style.maxHeight = "170px";
+            } else {
+                menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
 </body>
 
 </html>

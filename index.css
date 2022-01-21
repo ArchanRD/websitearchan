@@ -8,6 +8,21 @@ body {
     text-decoration: underline;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menuList {
+    padding-left: 0;
+}
+
+.archan {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
 .profile {
     width: 130px;
     margin-left: auto;
@@ -35,6 +50,51 @@ body {
     font-weight: bold;
     font-size: 20px;
     color: rgb(77, 77, 77);
+}
+
+.menu-icon {
+    height: 50px;
+    display: none;
+}
+
+button {
+    border: none;
+    float: right;
+    margin: -37px 50px 0 0;
+    color: white;
+    background-color: black;
+    padding: 12px 23px;
+    font-size: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "poppins";
+    transition: .1s ease;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.nav-mid ul {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+    margin-top: -25px;
+}
+
+.nav-mid li {
+    list-style: none;
+    margin: 0 10px;
+    font-family: "Poppins";
+    font-size: 17px;
+    transition: .2s ease;
+}
+
+.nav-mid li:hover {
+    color: red;
 }
 
 .mid {
@@ -147,7 +207,7 @@ body {
     display: none;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 800px) {
     .right {
         display: none;
     }
@@ -164,6 +224,10 @@ body {
     .heading h1 {
         /* border: 1px solid black; */
         font-size: 30px;
+        width: 128%;
+    }
+    .heading {
+        width: 38%;
     }
     .para {
         width: 150%;
@@ -185,35 +249,43 @@ body {
     .plink {
         text-decoration: none;
         display: flex;
+        font-size: 20px;
+        color: white;
+        margin: auto;
+        justify-content: center;
+        padding: 5px 0;
+        font-family: 'Poppins', sans-serif;
     }
     .smid {
         display: block;
-        margin: 0 0 0 45px;
     }
     .smid ul {
-        display: flex;
+        display: block;
         text-decoration: none;
         list-style: none;
-    }
-    .smid li {
-        padding: 0 10px;
-        font-size: 20px;
-        font-family: 'Cinzel', serif;
-    }
-    .smid a {
-        color: black;
-    }
-    .btn2 {
-        display: initial;
-        float: right;
-        position: relative;
-        top: 20px;
+        width: 100%;
+        margin: auto;
         background-color: black;
-        border: 1px solid black;
-        color: white;
-        border-radius: 5px;
-        padding: 3px 6px;
-        font-family: 'Cinzel', serif;
-        font-weight: 400;
+        transition: .5s;
+    }
+    a {
+        text-decoration: none;
+    }
+    .menu-icon {
+        display: block;
+        height: 50px;
+        float: right;
+        margin-top: -40px;
+        margin-right: 0px;
+    }
+    .nav-mid {
+        display: none;
+    }
+    button {
+        display: none;
+    }
+    .dumy {
+        width: 10%;
+        margin: 0px;
     }
 }
