@@ -201,16 +201,10 @@ hr {
         font-size: 14px;
         margin: auto;
     }
-    .white {
-        /* display: none; */
-    }
     .container {
         display: initial;
         width: 250px;
         margin: 340px 0 -294px 14px;
-    }
-    .wrap {
-        /* display: none; */
     }
     .hr1 {
         /* display: none; */
