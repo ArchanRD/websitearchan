@@ -5,111 +5,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Send your review</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
 <style>
-    body {
-        font-family: 'Poppins', sans-serif;
-        background-image: url("download.jpg");
-        color: white;
+    .menu-icon {
+        width: 70px;
     }
     
-    form {
-        border: 1px solid white;
-        width: 20%;
-        margin: auto;
-        margin-top: 200px;
-        padding-bottom: 1rem;
-        background-image: url("bg2.png");
+    .menulist {
+        display: none;
     }
     
-    .review-btm {
-        text-align: left;
-        height: 200px;
+    .menulist a {
+        list-style: none;
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
     }
     
-    .container {
-        border: 1px solid black;
-        border-radius: 5px;
-    }
-    
-    .btn {
-        border: 2px solid blue;
-        background-color: blue;
-        color: white;
-        border-radius: 10px;
-        width: 50%;
-        cursor: pointer;
-        padding: 5px;
-        text-align: center;
-        margin-left: 2rem;
-        font-family: 'Poppins', sans-serif;
-    }
-    
-    .btn:hover {
-        border: 2px solid rgb(0, 0, 240);
-        background-color: rgb(0, 0, 240);
-        color: white;
-        border-radius: 10px;
-        width: 50%;
-        cursor: pointer;
-        padding: 5px;
-        text-align: center;
-        margin-left: 2rem;
-        transition: .2s;
-    }
-    
-    .padding {
-        padding-left: 3rem;
-        font-size: 15px;
-    }
-    
-    h2 {
-        text-align: center;
-    }
-    
-    .input {
-        width: 48%;
-    }
-    
-    input[type=text] {
-        font-family: 'Poppins', sans-serif;
-        f
+    .change {
+        display: block;
     }
 </style>
 
 <body>
-
-    <form action="#" method="post">
-
-        <h2>Review Form</h2>
-        <div class="padding">
-            <label name="username">Name: </label>
-            <input class="input" type="text" placeholder="Enter your name" required /><br><br>
-            <label class="ratings">Ratings: </label>
-            <select>
-            <option>1 Star</option>
-            <option>2 Star</option>
-            <option>3 Star</option>
-            <option>4 Star</option>
-            <option>5 Star</option>
-        </select><br><br>
-
-            <label class="review">Write your review here: </label><br>
-            <textarea rows="5" cols="22"></textarea><br>
-
-            <button class="btn">Submit</button>
+    <div class="nav">
+        <img class="menu-icon" src="menu.png" onclick="togglemenu()">
+        <div class="menulist" id="menuList">
+            <a href="#">
+                <li>Home</li>
+            </a>
+            <a href="#">
+                <li>About</li>
+            </a>
+            <a href="#">
+                <li>Reach</li>
+            </a>
+            <a href="#">
+                <li>Apple</li>
+            </a>
         </div>
+    </div>
 
-
-
-
-
-    </form>
-
+    <script>
+        function togglemenu() {
+            document.getElementById("menuList").classList.toggle("change");
+        }
+    </script>
 </body>
 
 </html>

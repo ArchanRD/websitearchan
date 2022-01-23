@@ -49,22 +49,11 @@
         <div class="smid">
             <img class="menu-icon" src="menu.png" onclick="togglemenu()">
             <ul id="menuList">
-                <a class="plink dumy" href="index.html">
-                    <li></li>
-                </a>
-                <a class="plink" href="index.html">
-                    <li>Home</li>
-                </a>
-                <a class="plink" href="blog.html">
-                    <li>Blogs</li>
-                </a>
-                <a class="plink" href="aboutus.html">
-                    <li>About</li>
-                </a>
-                <a class="plink" href="contactus.html">
-                    <li>Reach</li>
-                </a>
+                <li>Home</li>
+                <li>About</li>
+
             </ul>
+
         </div>
 
 
@@ -83,15 +72,18 @@
 
 
     <script>
-        var menuList = document.getElementById("menuList");
-
+        let menuList = document.getElementById("menuList");
+        menuList.style.display = "none";
         menuList.style.maxHeight = "0px";
 
         function togglemenu() {
             if (menuList.style.maxHeight == "0px") {
-                menuList.style.maxHeight = "170px";
+                menuList.style.maxHeight = "100px"
+                menuList.style.display = "block";
+
             } else {
-                menuList.style.maxHeight = "0px";
+                menuList.style.maxHeight = "0px"
+                menuList.style.display = "none";
             }
         }
     </script>
