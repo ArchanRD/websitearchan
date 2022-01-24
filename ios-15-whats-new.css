@@ -167,20 +167,20 @@ body {
         font-size: 13px;
     }
     .mid-img-1 {
-        width: 330px;
+        width: 300px;
         margin: 5px;
         border-radius: 5px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.103);
     }
     .mid-img-para {
-        width: 320px;
+        width: 300px;
         margin: auto;
         font-size: 12px;
         /* border: solid black; */
         text-align: center;
     }
     .mid-img {
-        width: 330px;
+        width: 300px;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.103);
     }
     .mid-h4 {
