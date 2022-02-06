@@ -21,6 +21,9 @@ a {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    /* border: 1px solid black; */
+    width: 100px;
+    margin: auto 30px;
 }
 
 .profile {
@@ -175,17 +178,21 @@ button:hover {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     /* border: 2px solid red; */
-    width: 50%;
+    width: 800px;
     margin: auto;
     margin-top: 30px;
 }
 
-.heading p {
-    color: rgb(85, 85, 85);
+.heading img {
+    width: 400px;
+    margin: auto;
 }
 
-.heading h1 {
-    font-size: 50px;
+.heading p {
+    color: rgb(85, 85, 85);
+    width: 500px;
+    /* border: solid; */
+    margin: auto;
 }
 
 .tlines {
@@ -221,20 +228,24 @@ button:hover {
     .left {
         font-size: 20px;
     }
-    .heading h1 {
-        /* border: 1px solid black; */
-        font-size: 30px;
-        width: 150%;
-        margin-left: -36px;
+    .archan {
+        margin: auto;
+    }
+    .heading img {
+        width: 308px;
+        display: block;
+        margin: auto;
     }
     .heading {
-        width: 38%;
+        width: 300px;
+        /* border: solid; */
+        margin: auto;
     }
-    .para {
-        width: 150%;
+    .heading p {
+        width: 290px;
         /* border: 1px solid black; */
         font-size: 15px;
-        margin-left: -36px;
+        margin: auto;
     }
     .tlines {
         float: right;
@@ -256,6 +267,10 @@ button:hover {
     }
     .smid {
         display: block;
+        text-align: center;
+    }
+    .nouse {
+        color: black;
     }
     .smid ul {
         display: block;
@@ -268,7 +283,10 @@ button:hover {
         padding: 0;
     }
     .smid ul li {
-        color: red;
+        color: white;
+        margin: 5px 0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
     }
     a {
         text-decoration: none;

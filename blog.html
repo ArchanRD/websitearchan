@@ -117,7 +117,7 @@ body {
     
     .container {
         color: black;
-        margin-top: 70px;
+        margin-top: 20px;
     }
     
     .mid ul li {
@@ -139,6 +139,14 @@ body {
     .link {
         text-decoration: none;
         color: black;
+    }
+    
+    .head-link:hover {
+        text-decoration: underline;
+    }
+    
+    .head-link:active {
+        text-decoration: underline;
     }
     
     .btn {
@@ -262,6 +270,7 @@ body {
         width: 500px;
         margin: auto;
         margin-top: 20px;
+        margin-bottom: 20px;
         text-align: center;
         border-radius: 7px;
         padding: 10px;
@@ -310,7 +319,7 @@ body {
     .plink {
         text-decoration: none;
         display: flex;
-        font-size: 20px;
+        font-size: 18px;
         color: white;
         margin: auto;
         justify-content: center;
@@ -424,9 +433,12 @@ body {
 
 
     <div class="container1">
-        <img class="ios-img" src="apple-com.jpg" alt="image">
-
-        <h2 class="con-head">Apple</h2>
+        <a href="blog1.html">
+            <img class="ios-img" src="apple-com.jpg" alt="image">
+        </a>
+        <a class="head-link" href="blog1.html">
+            <h2 class="con-head">Apple</h2>
+        </a>
 
         <p class="con-para">Apple Inc. is an American multinational technology company that specializes in consumer electronics, computer software and online services. Apple is the largest information technology company by revenue and, since January 2021, the world's most
             valuable company</p>
@@ -436,15 +448,18 @@ body {
     </div>
 
     <script>
-        var menuList = document.getElementById("menuList");
-
+        let menuList = document.getElementById("menuList");
+        menuList.style.display = "none";
         menuList.style.maxHeight = "0px";
 
         function togglemenu() {
             if (menuList.style.maxHeight == "0px") {
-                menuList.style.maxHeight = "170px";
+                menuList.style.maxHeight = "150px"
+                menuList.style.display = "block";
+
             } else {
-                menuList.style.maxHeight = "0px";
+                menuList.style.maxHeight = "0px"
+                menuList.style.display = "none";
             }
         }
     </script>

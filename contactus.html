@@ -41,7 +41,7 @@
     }
     
     button {
-        border: none;
+        border: 1px solid black;
         float: right;
         margin: -37px 50px 0 0;
         color: white;
@@ -74,6 +74,7 @@
         font-family: "Poppins";
         font-size: 17px;
         transition: .2s ease;
+        color: black;
     }
     
     .nav-mid li:hover {
@@ -212,7 +213,7 @@
         .plink {
             text-decoration: none;
             display: flex;
-            font-size: 20px;
+            font-size: 18px;
             color: white;
             margin: auto;
             justify-content: center;
@@ -321,15 +322,18 @@
     </div>
 
     <script>
-        var menuList = document.getElementById("menuList");
-
+        let menuList = document.getElementById("menuList");
+        menuList.style.display = "none";
         menuList.style.maxHeight = "0px";
 
         function togglemenu() {
             if (menuList.style.maxHeight == "0px") {
-                menuList.style.maxHeight = "170px";
+                menuList.style.maxHeight = "150px"
+                menuList.style.display = "block";
+
             } else {
-                menuList.style.maxHeight = "0px";
+                menuList.style.maxHeight = "0px"
+                menuList.style.display = "none";
             }
         }
     </script>
