@@ -105,11 +105,18 @@
 
 .card-heading {
     font-size: 30px;
+    color:black;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     margin: 5px 0;
 }
-
+ 
+.last-card-link{
+    text-decoration: none;
+}
+.last-card-link:hover{
+    text-decoration: underline;
+}
 .card-para {
     font-family: "Poppins", sans-serif;
     /* border: solid black; */
