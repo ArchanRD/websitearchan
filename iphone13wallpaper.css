@@ -9,6 +9,7 @@
 .bg-black {
   background-color: black;
   height: 720px;
+  
 }
 
 .back button {
@@ -59,7 +60,7 @@
   display: block;
   text-align: center;
   /* border: solid white; */
-  width: 972px;
+  /* width: 972px; */
   margin: auto;
   padding: 110px 0;
 }
@@ -112,9 +113,13 @@
   display: block;
   margin: 30px auto;
 }
-.wallpaper-heading h1 {
+.wallpaper-heading h1{
   text-align: center;
-  font-size: 50px;
+  font-size: 31px;
+}
+.wallpaper-heading{
+  display: block;
+  margin: auto;
 }
 .wallpapers img {
   width: 300px;
@@ -126,9 +131,9 @@
   justify-content: space-around;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .bg-black {
-    width: 361px;
+    /* width: 400px; */
     height: 525px;
     margin:0;
   }
@@ -175,10 +180,34 @@
     }
 }
 .mid-img img{
-    width: 340px;
+    width: 320px;
+}
+.wallpaper-heading h1{
+  font-size: 26px;
 }
 .wallpaper-heading{
-    width: 348px;
-    line-height: 1.2;
+    
+    /* border:1px solid black; */
+    width: 300px;
+}
+@media (max-width: 280px){
+  .title{
+    width: 281px;
+  }
+  .mid-img img {
+    width: 281px;
+}
+.wallpaper-heading{
+ 
+  /* border:1px solid black; */
+  width: 280px;
+}
+.wallpaper-heading h1 {
+  font-size: 25px;
+}
+.wallpapers img {
+  width: 250px;
+ 
+}
 }
 }
