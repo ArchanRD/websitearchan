@@ -128,7 +128,7 @@
 
 @media (max-width: 768px) {
   .bg-black {
-    width: 384px;
+    width: 361px;
     height: 525px;
     margin:0;
   }
@@ -177,8 +177,8 @@
 .mid-img img{
     width: 340px;
 }
-.wallpaper-heading h1{
-    width: 383px;
+.wallpaper-heading{
+    width: 348px;
     line-height: 1.2;
 }
 }
