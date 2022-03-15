@@ -1,0 +1,56 @@
+.header {
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header h1 {
+    /* border: 2px solid blue; */
+    margin-left: 1rem;
+    text-align: center;
+    padding: .5rem 1rem;
+}
+
+.header ul {
+    list-style: none;
+    display: flex;
+}
+
+.header li {
+    padding: 1rem;
+    position: relative;
+    left: 55rem;
+}
+
+.btn {
+    background-color: green;
+    color: white;
+    border: green;
+    padding: 10px 9px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: white;
+    color: green;
+    border: 1px solid green;
+    padding: 10px 9px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+.header li {
+    cursor: pointer;
+}
+
+.header li:hover {
+    cursor: pointer;
+    color: green;
+    text-decoration: underline;
+}
