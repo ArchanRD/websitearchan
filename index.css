@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    animation-name: fade;
+    animation-duration: .5s;
 }
 
 .underline {
@@ -159,7 +161,7 @@ button:hover {
     border: 1px solid black;
     border-radius: 3px;
     padding: 3px 5px;
-    font-size: 1rem;
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -256,6 +258,7 @@ button:hover {
         display: flex;
         margin: auto;
         width: 100%;
+        
     }
     .plink {
         text-decoration: none;
@@ -265,34 +268,29 @@ button:hover {
         padding: 5px 0;
         font-family: 'Poppins', sans-serif;
     }
-    .smid {
+    .smid{
         display: block;
+        margin:0;
+    }
+    .smid ul{
+        display: flex;
+        flex-direction: column;
+        font-family: 'poppins', Arial, Helvetica, sans-serif;
+        width: 373px;
+        padding:0;
+        margin:0;
         text-align: center;
     }
-    .nouse {
-        color: black;
-    }
-    .smid ul {
-        display: block;
-        text-decoration: none;
-        list-style: none;
-        width: 100%;
-        margin: auto;
-        background-color: black;
-        transition: .5s;
-        padding: 0;
-    }
-    .smid ul li {
+    #menuList{
+        width: 423px;
+        font-size: 17px;
         color: white;
-        margin: 5px 0;
-        font-family: 'Poppins', sans-serif;
-        font-size: 18px;
-    }
-    a {
-        text-decoration: none;
+        background-color: black;
+        padding: 1px;
+        transition: 1s;
     }
     .menu-icon {
-        display: block;
+        display: flex;
         height: 50px;
         float: right;
         margin-top: -40px;
